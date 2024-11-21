@@ -1,0 +1,70 @@
+*{
+    font-family: Shadows Into Light;
+    font-size: 20px;
+}
+.t{
+    font-family: Pacifico;
+    color: #E4C1F9;
+    font-size: 35px;
+}
+.title{
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Caveat;
+    color: #FF99C8;
+}
+ul li::marker{
+    content: "💕";
+}
+ul li ul li::marker{
+    content: "✨";
+}
+ul li ul li ul li::marker{
+    content: "❤️";
+}
+[type="text"]{
+    background-color: #FCF6BD ;
+}
+input[type]{
+    background-color: #FCF6BD;
+}
+#headings {
+    background-color: #A9DEF9;
+}
+#sections {
+    background-color: #D0F4DE;
+}
+#phrasing {
+    background-color: #A9DEF9;
+}
+#palpable {
+    background-color: #D0F4DE;
+}
+#forms{
+    background-color: #A9DEF9;
+}
+#tables {
+    background-color: #D0F4DE;
+}
+#embeds{
+    background-color: #A9DEF9;
+}
+a[href^="https://"]{
+    font-size: 25px;
+    color: #FF99C8;
+}
+img[src$=".png"]{
+    border: 2px solid #FCF6BD;
+}
+input[type="text"]:focus{
+    background-color: #FF99C8;
+}
+button:active{
+    background-color: #FF99C8;
+}
+button{
+    background-color: #E4C1F9;
+}
+a:hover{
+    color: #E4C1F9;
+}

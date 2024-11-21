@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: rgb(241, 169, 220);
+    }
+    .house-buttons {
+      margin: 20px;
+    }
+    .house-buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .character {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      padding: 10px;
+      width: 150px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .character img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .character:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgb(193, 179, 247);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 200px;
+      max-width: 90%;
+      text-align: left;
+    }
+    .modal img {
+      max-width: 80%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .modal .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: rgb(195, 0, 255);
+    }
+  </style>
+</head>
+<body>
+  <h1>Harry Potter API</h1>
+  <h2>Toujours Pur </h2>
+  <div class="house-buttons">
+    <button data-house="Gryffindor" style="background: crimson; color: white;">Gryffindor</button>
+    <button data-house="Slytherin" style="background: green; color: white;">Slytherin</button>
+    <button data-house="Hufflepuff" style="background: goldenrod; color: black;">Hufflepuff</button>
+    <button data-house="Ravenclaw" style="background: blue; color: white;">Ravenclaw</button>
+  </div>
+  <div id="charactersContainer" class="container"></div>
+  <div id="characterModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <div id="modalContent"></div>
+  </div>
+  <script src="Js/harry-api.js"></script>
+</body>
+</html>
